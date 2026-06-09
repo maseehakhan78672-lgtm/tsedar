@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Detail - Tsedar</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <h1 class="logo">TSEDAR</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+        <div class="container">
+            <a href="index.html">Home</a> / <a href="products.html">Products</a> / <span>Product Detail</span>
+        </div>
+    </div>
+
+    <!-- Product Detail Section -->
+    <section class="pdp-section">
+        <div class="container">
+            <div class="product-detail">
+                <!-- Product Images -->
+                <div class="pdp-images">
+                    <div class="main-image">
+                        <div class="placeholder-product large"></div>
+                    </div>
+                    <div class="thumbnail-images">
+                        <div class="thumbnail">
+                            <div class="placeholder-product small"></div>
+                        </div>
+                        <div class="thumbnail">
+                            <div class="placeholder-product small"></div>
+                        </div>
+                        <div class="thumbnail">
+                            <div class="placeholder-product small"></div>
+                        </div>
+                        <div class="thumbnail">
+                            <div class="placeholder-product small"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Information -->
+                <div class="pdp-info">
+                    <div class="pdp-header">
+                        <h1 class="pdp-title">Premium Product Name</h1>
+                        <div class="pdp-rating">
+                            <div class="stars-display">★★★★★</div>
+                            <span class="rating-text">4.8 out of 5 (234 reviews)</span>
+                        </div>
+                    </div>
+
+                    <!-- Price Section -->
+                    <div class="price-section">
+                        <div class="price-display">
+                            <span class="current-price">$149.99</span>
+                            <span class="original-price">$199.99</span>
+                            <span class="discount-badge">25% OFF</span>
+                        </div>
+                    </div>
+
+                    <!-- Description -->
+                    <div class="description-section">
+                        <h3>Product Description</h3>
+                        <p>This premium product is expertly crafted to provide exceptional quality and performance. Designed with attention to detail, it combines functionality with elegant styling to enhance your everyday life.</p>
+                    </div>
+
+                    <!-- Features -->
+                    <div class="features-section">
+                        <h3>Key Features</h3>
+                        <ul class="features-list">
+                            <li>✓ Premium quality materials</li>
+                            <li>✓ Advanced technology integration</li>
+                            <li>✓ Sustainable and eco-friendly</li>
+                            <li>✓ Extended warranty included</li>
+                            <li>✓ Free shipping on orders over $50</li>
+                        </ul>
+                    </div>
+
+                    <!-- Options -->
+                    <div class="options-section">
+                        <div class="option-group">
+                            <label for="color">Color:</label>
+                            <select id="color" class="option-select">
+                                <option value="black">Black</option>
+                                <option value="white">White</option>
+                                <option value="silver">Silver</option>
+                                <option value="gold">Gold</option>
+                            </select>
+                        </div>
+
+                        <div class="option-group">
+                            <label for="size">Size:</label>
+                            <select id="size" class="option-select">
+                                <option value="small">Small</option>
+                                <option value="medium">Medium</option>
+                                <option value="large">Large</option>
+                                <option value="xlarge">X-Large</option>
+                            </select>
+                        </div>
+
+                        <div class="option-group">
+                            <label for="quantity">Quantity:</label>
+                            <div class="quantity-selector">
+                                <button id="decreaseQty" class="qty-btn">-</button>
+                                <input type="number" id="quantity" value="1" min="1" max="10">
+                                <button id="increaseQty" class="qty-btn">+</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Action Buttons -->
+                    <div class="action-buttons">
+                        <button class="btn btn-primary btn-large" onclick="addToCart()">Add to Cart</button>
+                        <button class="btn btn-secondary btn-large" onclick="addToWishlist()">♥ Add to Wishlist</button>
+                    </div>
+
+                    <!-- Shipping & Returns -->
+                    <div class="shipping-info">
+                        <div class="info-item">
+                            <span class="info-icon">🚚</span>
+                            <div>
+                                <strong>Free Shipping</strong>
+                                <p>On orders over $50. Usually arrives in 3-5 business days.</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-icon">↩️</span>
+                            <div>
+                                <strong>Easy Returns</strong>
+                                <p>30-day return policy. No questions asked.</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-icon">🛡️</span>
+                            <div>
+                                <strong>Warranty</strong>
+                                <p>1-year extended warranty included with every purchase.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Stock Status -->
+                    <div class="stock-status">
+                        <p><strong>Availability:</strong> <span class="in-stock">✓ In Stock (12 items available)</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Specifications Tab -->
+    <section class="specifications-section">
+        <div class="container">
+            <h2>Specifications</h2>
+            <table class="specs-table">
+                <tr>
+                    <td>Material</td>
+                    <td>Premium stainless steel and aluminum alloy</td>
+                </tr>
+                <tr>
+                    <td>Dimensions</td>
+                    <td>25cm x 15cm x 10cm</td>
+                </tr>
+                <tr>
+                    <td>Weight</td>
+                    <td>500 grams</td>
+                </tr>
+                <tr>
+                    <td>Color Options</td>
+                    <td>Black, White, Silver, Gold</td>
+                </tr>
+                <tr>
+                    <td>Warranty</td>
+                    <td>12 months extended warranty</td>
+                </tr>
+                <tr>
+                    <td>Certification</td>
+                    <td>ISO 9001, CE Certified</td>
+                </tr>
+            </table>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="reviews-section">
+        <div class="container">
+            <h2>Customer Reviews</h2>
+            <div class="reviews-container">
+                <div class="review">
+                    <div class="review-header">
+                        <strong>John D.</strong>
+                        <span class="review-rating">★★★★★</span>
+                    </div>
+                    <p class="review-date">Verified Purchase - 2 weeks ago</p>
+                    <p class="review-text">Excellent product! Exactly as described. Fast shipping and great customer service. Highly recommend!</p>
+                </div>
+
+                <div class="review">
+                    <div class="review-header">
+                        <strong>Sarah M.</strong>
+                        <span class="review-rating">★★★★☆</span>
+                    </div>
+                    <p class="review-date">Verified Purchase - 1 month ago</p>
+                    <p class="review-text">Very satisfied with my purchase. Quality is outstanding. Would buy again!</p>
+                </div>
+
+                <div class="review">
+                    <div class="review-header">
+                        <strong>Mike L.</strong>
+                        <span class="review-rating">★★★★★</span>
+                    </div>
+                    <p class="review-date">Verified Purchase - 1 month ago</p>
+                    <p class="review-text">Perfect! Delivered quickly and the product is exactly what I needed. Great value for money.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Related Products -->
+    <section class="related-products">
+        <div class="container">
+            <h2>Related Products</h2>
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-image">
+                        <div class="placeholder-product"></div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Similar Product 1</h3>
+                        <p class="product-description">High quality item with exceptional features</p>
+                        <div class="product-footer">
+                            <span class="price">$99.99</span>
+                            <button class="btn btn-secondary" onclick="navigateTo('product-detail.html')">View Details</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <div class="placeholder-product"></div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Similar Product 2</h3>
+                        <p class="product-description">Carefully crafted for excellence</p>
+                        <div class="product-footer">
+                            <span class="price">$129.99</span>
+                            <button class="btn btn-secondary" onclick="navigateTo('product-detail.html')">View Details</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <div class="placeholder-product"></div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Similar Product 3</h3>
+                        <p class="product-description">Designed for modern living</p>
+                        <div class="product-footer">
+                            <span class="price">$149.99</span>
+                            <button class="btn btn-secondary" onclick="navigateTo('product-detail.html')">View Details</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>About Tsedar</h4>
+                    <p>Your trusted source for premium quality products and exceptional service.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p>Email: info@tsedar.com</p>
+                    <p>Phone: +1 (555) 123-4567</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Tsedar. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
