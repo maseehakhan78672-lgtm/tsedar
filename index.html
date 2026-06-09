@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tsedar - Premium Products</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <h1 class="logo">TSEDAR</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h2 class="hero-title">Welcome to Tsedar</h2>
+            <p class="hero-subtitle">Discover premium quality products for your lifestyle</p>
+            <button class="btn btn-primary" onclick="navigateTo('products.html')">Shop Now</button>
+        </div>
+        <div class="hero-image">
+            <div class="placeholder-image"></div>
+        </div>
+    </section>
+
+    <!-- Featured Products Section -->
+    <section class="featured-products">
+        <div class="container">
+            <h2 class="section-title">Featured Products</h2>
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-image">
+                        <div class="placeholder-product"></div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Premium Product 1</h3>
+                        <p class="product-description">High quality item with exceptional features</p>
+                        <div class="product-footer">
+                            <span class="price">$99.99</span>
+                            <button class="btn btn-secondary" onclick="navigateTo('product-detail.html')">View Details</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <div class="placeholder-product"></div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Premium Product 2</h3>
+                        <p class="product-description">Carefully crafted for excellence</p>
+                        <div class="product-footer">
+                            <span class="price">$129.99</span>
+                            <button class="btn btn-secondary" onclick="navigateTo('product-detail.html')">View Details</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <div class="placeholder-product"></div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Premium Product 3</h3>
+                        <p class="product-description">Designed for modern living</p>
+                        <div class="product-footer">
+                            <span class="price">$149.99</span>
+                            <button class="btn btn-secondary" onclick="navigateTo('product-detail.html')">View Details</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta">
+        <div class="cta-content">
+            <h2>Explore Our Complete Collection</h2>
+            <p>Browse through hundreds of premium products</p>
+            <button class="btn btn-light" onclick="navigateTo('products.html')">View All Products</button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>About Tsedar</h4>
+                    <p>Your trusted source for premium quality products and exceptional service.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p>Email: info@tsedar.com</p>
+                    <p>Phone: +1 (555) 123-4567</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Tsedar. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
